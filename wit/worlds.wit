@@ -1,0 +1,5 @@
+package componentized:sockets@0.1.0-dev;
+
+world imports {
+    import latch;
+}

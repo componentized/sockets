@@ -1,0 +1,49 @@
+package componentized:sockets-components;
+
+world gated-ip-name-lookup {
+    import componentized:sockets/latch@0.1.0-dev;
+    import wasi:config/store@0.2.0-rc.1;
+    import wasi:logging/logging@0.1.0-draft;
+    import wasi:sockets/ip-name-lookup@0.3.0;
+    export wasi:sockets/ip-name-lookup@0.3.0;
+}
+
+world gated-types {
+    import componentized:sockets/latch@0.1.0-dev;
+    import wasi:config/store@0.2.0-rc.1;
+    import wasi:logging/logging@0.1.0-draft;
+    import wasi:sockets/types@0.3.0;
+    export wasi:sockets/types@0.3.0;
+}
+
+world latch {
+    import wasi:logging/logging@0.1.0-draft;
+    import wasi:config/store@0.2.0-rc.1;
+    import componentized:sockets/latch@0.1.0-dev;
+    export componentized:sockets/latch@0.1.0-dev;
+}
+
+world latch-n {
+    export componentized:sockets/latch@0.1.0-dev;
+    import latch0: componentized:sockets/latch@0.1.0-dev;
+    import latch1: componentized:sockets/latch@0.1.0-dev;
+    import latch2: componentized:sockets/latch@0.1.0-dev;
+    import latch3: componentized:sockets/latch@0.1.0-dev;
+    import latch4: componentized:sockets/latch@0.1.0-dev;
+}
+
+world traced-ip-name-lookup {
+    import wasi:logging/logging@0.1.0-draft;
+    import wasi:sockets/ip-name-lookup@0.3.0;
+    export wasi:sockets/ip-name-lookup@0.3.0;
+}
+
+world traced-types {
+    import wasi:logging/logging@0.1.0-draft;
+    import wasi:sockets/types@0.3.0;
+    export wasi:sockets/types@0.3.0;
+}
+
+world insecure-random {
+    import wasi:random/insecure@0.3.0;
+}

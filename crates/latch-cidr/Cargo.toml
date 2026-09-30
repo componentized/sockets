@@ -1,0 +1,14 @@
+[package]
+name = "latch-cidr"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+
+[features]
+# conversions to the latch component bindings, see `sockets-latch`
+latch = ["dep:sockets-latch"]
+
+[dependencies]
+ipnet = { workspace = true }
+sockets-latch = { workspace = true, optional = true }
