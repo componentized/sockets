@@ -43,7 +43,7 @@ sockets-latch = { path = "./crates/sockets-latch" }
 sockets-latch-n = { path = "./crates/sockets-latch-n" }
 test-harness = { path = "./crates/test-harness" }
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "io-util", "sync", "time"] }
-wac-graph = "0.11"
+wac-graph = "0.12"
 wasmtime = { version = "49", features = ["component-model-async"] }
 wasmtime-wasi = { version = "49", features = ["p3"] }
 wit-bindgen = { version = "0.62.0", features = ["async-spawn"] }
