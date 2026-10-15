@@ -31,8 +31,8 @@ Imports:
 
 - `wasi:logging/logging@0.1.0-draft`: logs the decisions of the wrapped latch
 - `wasi:sockets/types@0.3.0`: the socket types of the operations being authorized
-- `componentized:sockets/latch@0.1.0`: the wrapped latch
+- `componentized:sockets/latch@0.1.1-dev`: the wrapped latch
 
 Exports:
 
-- `componentized:sockets/latch@0.1.0`: the latch
+- `componentized:sockets/latch@0.1.1-dev`: the latch
