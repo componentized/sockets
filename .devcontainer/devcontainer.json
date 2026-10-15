@@ -21,7 +21,7 @@
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo \"export \\\"PATH=$(make -s tools-path):\\${PATH}\\\"\" >> ~/.bashrc && curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash && cargo check && make tools",
+	"postCreateCommand": "./scripts/init-devcontainer.sh",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
