@@ -28,4 +28,4 @@ Imports:
 
 Exports:
 
-- `componentized:sockets/latch@0.1.1`: the latch
+- `componentized:sockets/latch@0.1.2-dev`: the latch

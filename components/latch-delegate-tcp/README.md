@@ -28,8 +28,8 @@ export new local:latch-n2 {
 Imports:
 
 - `wasi:sockets/types@0.3.0`: the socket types of the operations being authorized
-- `componentized:sockets/latch@0.1.1`: the wrapped latch, consulted for tcp socket operations
+- `componentized:sockets/latch@0.1.2-dev`: the wrapped latch, consulted for tcp socket operations
 
 Exports:
 
-- `componentized:sockets/latch@0.1.1`: the latch
+- `componentized:sockets/latch@0.1.2-dev`: the latch
